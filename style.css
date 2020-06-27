@@ -1,0 +1,100 @@
+
+/* box-sizing */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* custom */
+
+* {
+    font-size: 16px;
+}
+
+.outer {
+    margin: auto;
+    width: 288px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: midnightblue;
+}
+
+#outputBox {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    height: 50px;
+    text-align: right;
+    padding: 5px;
+    font-size: 26px;
+    background-color: blanchedalmond;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+.row1 {
+    margin-top: 5px;
+}
+
+.btnNum {
+    /* background-color: lavender; */
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px #000000;
+    border: 0;
+}
+
+.btnOperator {
+    background-color: salmon;
+    box-shadow: inset 0 0 5px #000000;
+    border: 0;
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+/* .btnOperator:focus {
+    background-color: salmon;
+} */
+
+.btnEqual {
+    width: 104px;
+    height: 40px;
+    background-color: forestgreen;
+    box-shadow: inset 0 0 5px #000000;
+    border: 0;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+/* .btnEqual:focus { 
+    background-color: forestgreen;
+} */
+
+.btnDel {
+    width: 50px;
+    height: 40px;
+    background-color: mediumpurple;
+    box-shadow: inset 0 0 5px #000000;
+    border: 0;
+    border-radius: 15px;
+}
+
+/* .btnDel:focus {
+    background-color: mediumpurple;
+
+} */
+
+#clearOutputBox {
+    background-color: gold;
+    box-shadow: inset 0 0 5px #000000;
+    border: 0;
+    border-radius: 15px;
+}
+
+button:focus {
+    opacity: 0.7;
+}

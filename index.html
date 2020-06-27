@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class='outer'>
+
+        <form>
+            <input type="text" name="" id="outputBox" value="0">
+        </form>
+
+        <div class="row1">
+            <button class='btnDel' id="" onclick="del()" onmouseout="blur()"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
+            <button class='btnOperator' id="" onclick="getBtn('(')" onmouseout="blur()">(</button>
+            <button class='btnOperator' id="" onclick="getBtn(')')" onmouseout="blur()">)</button> 
+            <button class='btnOperator' onclick="signChange()" onmouseout="blur()">&#177;</button>
+            <button class='btnOperator' onclick="getRcpr()" onmouseout="blur()">1/x</button>
+        </div>
+
+        <div class="row1">
+            <button class='btnNum' id="" onclick="getBtn('7')" onmouseout="blur()">7</button>
+            <button class='btnNum' id="" onclick="getBtn('8')" onmouseout="blur()">8</button>
+            <button class='btnNum' id="" onclick="getBtn('9')" onmouseout="blur()">9</button>                       
+            <button class='btnOperator' id="" onclick="getSqrRt()" onmouseout="blur()">&Sqrt;</button>
+            <button class='btnOperator' id="" onclick="getSqr()" onmouseout="blur()">x<sup style="font-size: 10px;">2</sup></button>
+        </div>
+
+        <div class="row1">
+            <button class='btnNum' id="" onclick="getBtn('4')" onmouseout="blur()">4</button>
+            <button class='btnNum' id="" onclick="getBtn('5')" onmouseout="blur()">5</button>
+            <button class='btnNum' id="" onclick="getBtn('6')" onmouseout="blur()">6</button>
+            <button class='btnOperator' id="" onclick="getBtn('/')" onmouseout="blur()">/</button>
+            <button class='btnOperator' id="" onclick="getBtn('*')" onmouseout="blur()">*</button>
+        </div>
+
+        <div class="row1">
+            <button class='btnNum' id="" onclick="getBtn('1')" onmouseout="blur()">1</button>
+            <button class='btnNum' id="" onclick="getBtn('2')" onmouseout="blur()">2</button>
+            <button class='btnNum' id="" onclick="getBtn('3')" onmouseout="blur()">3</button>
+            <button class='btnOperator' id="" onclick="getBtn('-')" onmouseout="blur()">-</button>
+            <button class='btnOperator' id="" onclick="getBtn('+')" onmouseout="blur()">+</button>
+        </div>
+
+        <div class="row1">
+            <button class='btnNum' id="clearOutputBox" onclick="clearBox()" onmouseout="blur()">C</button>
+            <button class='btnNum' id="" onclick="getBtn('0')" onmouseout="blur()">0</button>
+            <button class='btnNum' id="" onclick="getBtn('.')" onmouseout="blur()">.</button>
+            <button class='btnEqual' id="" onclick="getOutput()" onmouseout="blur()">=</button>
+        </div>
+
+    </div>
+    <!-- OUTER end -->
+
+</body>
+<script src="app.js"></script>
+</html>
